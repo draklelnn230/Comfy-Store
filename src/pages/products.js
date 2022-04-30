@@ -13,4 +13,10 @@ import { store } from "../store.js";
 import display from "../displayProducts.js";
 import { getElement } from "../utils.js";
 
+const loading = getElement(".page-loading");
+
 display(store, getElement(".products-container"));
+
+setTimeout(() => {
+  loading.style.display = "none";
+}, 2000);
