@@ -17,3 +17,4 @@ const loading = getElement(".page-loading");
 loading.style.display = "none";
 display(store, getElement(".products-container"));
 setupSearch(store);
+setupCompanies(store);
