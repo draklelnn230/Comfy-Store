@@ -17,6 +17,4 @@ const loading = getElement(".page-loading");
 
 display(store, getElement(".products-container"));
 
-setTimeout(() => {
-  loading.style.display = "none";
-}, 2000);
+loading.style.display = "none";
