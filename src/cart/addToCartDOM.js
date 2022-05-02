@@ -23,7 +23,6 @@ const addToCartDOM = ({ id, name, price, image, amount }) => {
               </button>
             </div>
   `;
-  console.log(article);
   cartItemsDOM.appendChild(article);
 };
 
