@@ -1,5 +1,5 @@
 import { formatPrice, getElement } from "../utils.js";
-const cartItesmDOM = getElement(".cart-items");
+const cartItemsDOM = getElement(".cart-items");
 const addToCartDOM = ({ id, name, price, image, amount }) => {
   const article = document.createElement("article");
   article.classList.add("cart-item");
@@ -23,7 +23,8 @@ const addToCartDOM = ({ id, name, price, image, amount }) => {
               </button>
             </div>
   `;
-  cartItesmDOM.appendChild(article);
+  console.log(article);
+  cartItemsDOM.appendChild(article);
 };
 
 export default addToCartDOM;
